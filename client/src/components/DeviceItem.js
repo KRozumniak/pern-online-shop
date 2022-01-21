@@ -6,6 +6,7 @@ import {DEVICE_ROUTE} from "../utils/consts";
 
 const DeviceItem = ({device}) => {
   const history = useHistory()
+
   console.log(history)
   return (
     <Col md={3} className='mt-3' onClick={() => history.push(DEVICE_ROUTE + '/' + device.id)}>
